@@ -1,15 +1,17 @@
 main {
   margin: 0 auto;
-  max-width: 90%;
   padding: 50px 30px;
+  background-image: url('Assets/distance.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 :root {
-  --primary: #8c54ff;
+  --primary: #4C84A5;
   --secondary: #f3a847;
-  --tertiary: #b12704;
+  --tertiary: #DEAFAC;
   --light: #fafafa;
-  --dark: #000000;
-  --darker: #111111;
+  --dark: #AF573E;
+  --darker: #FD9C71;
   --error: rgb(228, 46, 1);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
@@ -240,7 +242,7 @@ textarea {
 }
 
 .modalBackdrop {
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(160, 7, 7, 0.65);
   bottom: 0;
   left: 0;
   overflow: auto;
@@ -288,4 +290,41 @@ a {
 
 .navActive {
   color: var(--secondary);
+}
+
+/*footer stuff*/
+.footer {
+  background-color: var(--primary);
+  bottom: 0 !important;
+  padding-top: 10px !important;
+  padding-bottom: 8px !important ;
+}
+.footer-copywright {
+  text-align: center !important;
+}
+
+.footer-body {
+  text-align: center !important;
+}
+
+
+/*Home stuff */
+.home-header {
+  padding-top: 80px !important;
+}
+
+.home-section {
+  position: relative;
+  z-index: -1;
+  background-image: var(--image-gradient), url('./Assets/distance.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding-bottom: 30px !important;
+  padding-top: 30px !important;
+}
+
+.home-content {
+  padding: 9rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
 }

@@ -1,10 +1,21 @@
 import React, { useState } from 'react';
+
+// Constatntly should be on page
 import Nav from './Components/Nav';
+import Footer from './Components/Footer.js';
+
+
 import About from './Components/About';
-import Gallery from './Components/Gallery';
+import Projects from './Components/Projects/index';
 import ContactForm from './Components/Contact';
 
-import Footer from './Components/Footer.js';
+import Resume from './Components/Resume/Resume';
+
+// The main home screen
+import Home from './Components/Home/Home'
+
+
+
 
 function App() {
   const [categories] = useState([
@@ -31,10 +42,11 @@ function App() {
         setContactSelected={setContactSelected}
       ></Nav>
       <main>
+     
         {!contactSelected ? (
           <>
-            <Gallery currentCategory={currentCategory}></Gallery>
-            <About></About>
+             <Home></Home>
+           
           </>
         ) : (
           <ContactForm></ContactForm>
