@@ -1,39 +1,47 @@
-//import React, { useState, useEffect } from "react";
-//import logo from './logo.svg';
-import './App.css';
-import Navbar from "./Components/Navbar";
-//import Home from "./Components/Home/Home";
-import About from "./Components/About/About";
-import Contact from "./Components/Contact/index";
-//import Projects from "./Components/Projects/Projects";
-//import Footer from "./Components/Footer";
-//import Resume from "./Components/Resume/Resume";
+import React, { useState } from 'react';
+import Nav from './Components/Nav';
+import About from './Components/About';
+import Gallery from './Components/Gallery';
+import ContactForm from './Components/Contact';
+
+import Footer from './Components/Footer.js';
 
 function App() {
-  /*const [load, upadateLoad] = useState(true);
-  
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-    
-    return () => clearTimeout(timer);
-  }, []);*/
+  const [categories] = useState([
+    {
+      name: 'commercial',
+      description: 'Photos of grocery stores, food trucks, and other commercial projects',
+    },
+    { name: 'portraits', description: 'Portraits of people in my life' },
+    { name: 'food', description: 'Delicious delicacies' },
+    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
+  ]);
+
+  const [currentCategory, setCurrentCategory] = useState(categories[0]);
+
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div>
-      <Navbar
-
-      ></Navbar>
+      <Nav
+        categories={categories}
+        setCurrentCategory={setCurrentCategory}
+        currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected}
+      ></Nav>
       <main>
-    
+        {!contactSelected ? (
           <>
+            <Gallery currentCategory={currentCategory}></Gallery>
             <About></About>
           </>
         ) : (
-          <Contact></Contact>
-        )
+          <ContactForm></ContactForm>
+        )}
       </main>
+        <Footer></Footer>
+
     </div>
   );
 }

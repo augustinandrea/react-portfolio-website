@@ -68,3 +68,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+{currentPhotos.map((image, i) => (
+          <img
+            src={require(`Assets/Projects/${category}/${i}.jpg`)}
+            alt={image.name}
+            className="img-thumbnail mx-1"
+            onClick={() => toggleModal(image, i)}
+            key={image.name}
+          />
+        ))}
+
+
+(For About IMG)
+        <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
