@@ -84,3 +84,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 (For About IMG)
         <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
+
+        					<Card.Subtitle className="card-subtitle">Techs Used</Card.Subtitle>
+					<Card.Text className="card-techs">{getTechs(techs)}</Card.Text>
+
+
+
+                    <Card.Img
+				variant="top"
+				src={require(`/../../Assets/Projects/${image}`)}
+				className="card-image"
+			/>
