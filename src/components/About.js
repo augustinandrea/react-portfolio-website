@@ -1,9 +1,15 @@
 import React from 'react';
-//import coverImage from 'Assets/portfolio-picture.jpg';
+
 function About() {
+  
   return (
     <section className="my-5">
       <h1 id="about">Andrea Augustin</h1>
+      <img
+					src='../Assets/portfolio_picture.jpg'
+					alt="about-me"
+					className="photo"
+				/>
 
       <div className="my-2">
         <p>

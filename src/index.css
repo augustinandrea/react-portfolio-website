@@ -1,9 +1,7 @@
 main {
   margin: 0 auto;
   padding: 50px 30px;
-  background-image: url('Assets/distance.jpg');
-  background-repeat: no-repeat;
-  background-size: auto;
+  
 }
 :root {
   --primary: #4C84A5;
@@ -91,7 +89,10 @@ a:hover {
 }
 
 header {
-  background: var(--dark);
+  padding-top: 10px;
+  background-image: url('Assets/distance.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 header a {
@@ -174,6 +175,7 @@ textarea {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .space-between {
@@ -305,26 +307,4 @@ a {
 
 .footer-body {
   text-align: center !important;
-}
-
-
-/*Home stuff */
-.home-header {
-  padding-top: 80px !important;
-}
-
-.home-section {
-  position: relative;
-  z-index: -1;
-  background-image: var(--image-gradient), url('./Assets/distance.jpg');
-  background-position: top center;
-  background-repeat: no-repeat;
-  padding-bottom: 30px !important;
-  padding-top: 30px !important;
-}
-
-.home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
-  text-align: left;
 }

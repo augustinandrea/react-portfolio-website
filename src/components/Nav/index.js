@@ -1,53 +1,36 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { capitalizeFirstLetter } from '../../utils/helpers';
 
 function Nav(props) {
-  const {
-    categories = [],
-    setCurrentCategory,
-    contactSelected,
-    currentCategory,
-    setContactSelected,
-  } = props;
-
-  useEffect(() => {
-    document.title = capitalizeFirstLetter(currentCategory.name);
-  }, [currentCategory]);
+  const { currentTab, setCurrentTab } = props;
 
   return (
     <header className="flex-row px-1">
       <h2>
         <a data-testid="link" href="/">
-          <span role="img" aria-label="camera"> 📸</span> Andrea Augustin
+          <span role="img" aria-label="paws"> 🐾</span> Andrea Augustin
         </a>
       </h2>
-      <nav>
-        <ul className="flex-row">
-          
-          <li className="mx-2">
-            <a data-testid="about" href="#about" onClick={() => setContactSelected(false)}>
-              About me
-            </a>
-          </li>
+  
+		<nav>
+			<ul className="flex-row mobile-view">
+				<li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("about")}>About Me</span>
+				</li>
+				<li className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("portfolio")}>Projects</span>
+				</li>
+				<li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("contact")}>Contact</span>
+				</li>
+				<li className={currentTab === "resume" ? "mx-2 navActive" : "mx-2"}>
+					<span onClick={() => setCurrentTab("resume")}>Resume</span>
+				</li>
+			</ul>
+		</nav>
 
-          <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-            <span onClick={() => setContactSelected(true)}>Contact</span>
-          </li>
-
-          <li className="mx-2">
-            <a data-testid="about" href="#projects" onClick={() => setContactSelected(false)}>
-              Projects
-            </a>
-          </li>
-          <li className="mx-2">
-            <a data-testid="about" href="#resume" onClick={() => setContactSelected(false)}>
-              Resume
-            </a>
-          </li>
-        </ul>
-      </nav>
     </header>
-  );
-}
+	);
+  }
 
 export default Nav;
