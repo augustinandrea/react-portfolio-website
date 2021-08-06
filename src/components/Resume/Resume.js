@@ -1,4 +1,5 @@
 import React from "react";
+import DownloadRes from '../../Assets/Projects/resume_ND_final.pdf';
 
 function Resume() {
 	return (
@@ -7,7 +8,7 @@ function Resume() {
 				<h1 className="page-header">My Resume</h1>
 			</div>
 			<div className="bottom-spacing">
-				<a href={require("../../Assets/Projects/resume_ND_final.pdf")} download>
+				<a href={DownloadRes} download>
 					<h4>Download my Resume</h4>
 				</a>
 			</div>
@@ -20,8 +21,8 @@ function Resume() {
 					<li>jQuery</li>
 					<li>Bootstrap</li>
 					<li>React</li>
-					<li>version control/Git</li> 
-					<li>responsive design</li>
+					<li>Version control/Git</li> 
+					<li>Responsive design</li>
 				</ol>
 				<br></br>
 				<h5>Back-End Proficiencies</h5>
@@ -29,8 +30,6 @@ function Resume() {
 					<li>APIs</li>
 					<li>NodeJS</li>
 					<li>Express</li>
-					<li>Model View Controller (MVC)</li>
-					<li>REST</li>
 					<li>Progressive Web Applications (PWA)</li>
 				</ol>
 				<br></br>

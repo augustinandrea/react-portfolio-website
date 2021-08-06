@@ -1,4 +1,5 @@
 import React from 'react';
+import picture from '../Assets/portfolio_picture.jpg';
 
 function About() {
 
@@ -6,7 +7,7 @@ function About() {
     <section className="my-5">
       <h1 id="about">Andrea Augustin</h1>
       <img
-					src= {require('../Assets/portfolio_picture.jpg')}
+					src= {picture}
 					alt="about-me"
 					className="photo"
 				/>

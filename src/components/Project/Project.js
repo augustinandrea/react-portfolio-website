@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Card from "react-bootstrap/Card";
+//import Image from '../../Assets/Project'
 
 function Project(props) {
 	// This imports the information for the current project sent down.
@@ -16,7 +17,7 @@ function Project(props) {
 		<Card style={{ width: "18rem" }}>
 			<Card.Img
 				variant="top"
-				src={ require(`../../Assets/Projects/${image}`) }
+				src={ image }
 				className="card-image"
 			/>
 			<div className="center">
