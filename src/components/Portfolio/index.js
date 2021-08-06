@@ -4,40 +4,47 @@ import Project from '../Project/Project';
 function Portfolio() {
   const projects = ([
     {
-      name: 'Beyblade Animation',
-      description: 'Short animation using Autodesk Maya.',
-      image: '../../Assets/Projects/maya_animation.jpeg',
-      link: "https://www.youtube.com/watch?v=BGvb8dRNdWk&ab_channel=AndreaAugustin"
-    },
-    {
-      name: 'Coming Out',
-      description: 'Short 5-shot student film',
-      image: '../../Assets/Projects/coming_out.png',
-      link: "https://www.youtube.com/watch?v=wqzMbHQkdu0&ab_channel=AndreaAugustin"
-    },
-    {
-      name: 'Workday Scheduler',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      image: '',
-      link: "https://augustinandrea.github.io/workday_scheduler/Develop/"
+      name: 'Budget Tracker',
+      description: 'In this project, the application tracks the given budget. It will show the addition and subtraction of funds over the course of time. This is an application that can work while offline.',
+      image: 'budget_tracker.png',
+      appLink: 'https://budget-tracker-mongo-pwa.herokuapp.com/',
+      gitLink: 'https://github.com/augustinandrea/budget_tracker'
     },
     {
       name: 'Timed Quiz',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      image: '../../Assets/Projects/run_buddy.png',
-      link: "https://augustinandrea.github.io/timed_quiz/"
+      description: "Create a timed quiz that asks a few multiple choice questions. The timed quiz's score is the time left on the quiz. If something is answered wrong, the timed is subtracted by 10 seconds. All scores and initials are saved to local drive.",
+      image: 'quiz.png',
+      appLink: 'https://augustinandrea.github.io/timed_quiz/',
+      gitLink: 'https://github.com/augustinandrea/timed_quiz'
+
+    },
+    {
+      name: 'Workday Scheduler',
+      description: 'In this code I create a scheduler that goes from 9AM to 5PM. At the top it lists the weekday, date, month, and year. At the bottom there are text boxes that can be wrote in. By pressing the save button, the text can be saved to local storage.',
+      image: 'work_schedule.png',
+      appLink: 'https://augustinandrea.github.io/workday_scheduler/Develop/',
+      gitLink: 'https://github.com/augustinandrea/workday_scheduler'
+    },
+    {
+      name: 'Password Generator',
+      description: 'Application to generate a password. When generating a password there will be a series of prompts that help create the password. There are multiple alerts that show up and ask if you want uppercase, lowercase, numbers, or special characters in the password.',
+      image: 'password_gen.png',
+      appLink: 'https://augustinandrea.github.io/friendly_parakeet/Develop',
+      gitLink: 'https://github.com/augustinandrea/friendly_parakeet'
     },
     {
       name: 'Bike Watch',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      image: '../../Assets/Projects/bikewatch.png',
-      link: "https://acevezl.github.io/biker/"
+      description: 'As a biker I would like to be informed of biking related incidents around a particular area so I can be proactive in protecting my property and myself.',
+      image: 'bikewatch.png',
+      appLink: 'https://acevezl.github.io/biker/',
+      gitLink: 'https://github.com/acevezl/biker'
     },
     {
       name: 'Bark Book',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
-      image: '../../Assets/Projects/run_buddy.png',
-      link: "https://barkbook.herokuapp.com/"
+      description: 'TheBarkBook is social media blog application for dogs. ',
+      image: 'barkbook.png',
+      appLink: 'https://barkbook.herokuapp.com/',
+      gitLink: 'https://github.com/anirud314/BarkBook'
     }
   ]);
 

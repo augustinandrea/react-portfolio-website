@@ -1,12 +1,12 @@
 import React from 'react';
 
 function About() {
-  
+
   return (
     <section className="my-5">
       <h1 id="about">Andrea Augustin</h1>
       <img
-					src='../Assets/portfolio_picture.jpg'
+					src= {require('../Assets/portfolio_picture.jpg')}
 					alt="about-me"
 					className="photo"
 				/>

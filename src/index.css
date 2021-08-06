@@ -4,7 +4,7 @@ main {
   
 }
 :root {
-  --primary: #4C84A5;
+  --primary: #4e4ca5;
   --secondary: #f3a847;
   --tertiary: #DEAFAC;
   --light: #fafafa;
@@ -32,7 +32,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
+  background: var(--primary);
   color: var(--light);
   font-family: 'Poiret One', cursive;
 }
@@ -97,6 +97,7 @@ header {
 
 header a {
   color: var(--light);
+  text-decoration: none;
 }
 
 button {
@@ -231,9 +232,47 @@ textarea {
   padding-bottom: var(--spacing-two);
 }
 
+/* Card Stuff */
 .card {
   width: 25%;
   text-align: center;
+}
+
+.card {
+	width: 25%;
+	text-align: center;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	color: var(--quaternary);
+}
+
+.card-subtitle {
+	font-size: 1rem;
+	color: var(--tertiary);
+}
+
+.card-text {
+	font-size: 0.75rem;
+	height: 8rem;
+	color: var(--quinary);
+}
+
+.card-techs {
+	font-size: 0.75rem;
+	height: 4rem;
+	color: var(--quinary);
+}
+
+.card-image {
+	max-width: 300px;
+	max-height: 150px;
+}
+
+.card-link {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 0.70rem;
 }
 
 .img-thumbnail {
@@ -270,7 +309,7 @@ textarea {
 }
 
 button {
-  background: var(--primary);
+  background: var(--darker);
   border: 0;
   border-radius: 5px;
   color: #fff;
@@ -283,7 +322,7 @@ button {
 
 a {
   border-radius: 5px;
-  color: var(--primary);
+  color: var(--darker);
   font-weight: 600;
   padding: 2px 4px;
   margin-left: -2px;
@@ -291,15 +330,18 @@ a {
 }
 
 .navActive {
-  color: var(--secondary);
+  color: var(--dark);
 }
 
 /*footer stuff*/
 .footer {
-  background-color: var(--primary);
+  background-image: url('Assets/distance.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px -80px;
   bottom: 0 !important;
   padding-top: 10px !important;
-  padding-bottom: 8px !important ;
+  padding-bottom: 8px !important;
 }
 .footer-copywright {
   text-align: center !important;
@@ -307,4 +349,16 @@ a {
 
 .footer-body {
   text-align: center !important;
+}
+
+.footer-icons{
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+
+svg{
+  width: 50px;
+  height: 50px;
 }
