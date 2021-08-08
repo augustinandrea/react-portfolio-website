@@ -5,19 +5,17 @@ function Resume() {
 	return (
 		<section>
 			<div className="center">
-				<h1 className="page-header">My Resume</h1>
+				<h1 className="page-header">My Resume </h1>
+				
 			</div>
 			<div className="bottom-spacing">
 				<a href={DownloadRes} download>
-					<h4>Download my Resume</h4>
+					<h4>Download My Resume Here</h4>
 				</a>
 			</div>
-			<div>
+			<div id="resume-list">
 				<h5>Front-End Proficiencies</h5>
 				<ol>
-					<li>HTML5</li>
-					<li>CSS3</li>
-					<li>JavaScript</li>
 					<li>jQuery</li>
 					<li>Bootstrap</li>
 					<li>React</li>
@@ -33,11 +31,12 @@ function Resume() {
 					<li>Progressive Web Applications (PWA)</li>
 				</ol>
 				<br></br>
-				<h5>Dev Tool Proficiencies</h5>
+				<h5>Coding Languages</h5>
 				<ol>
-					<li>Git</li>
-					<li>npm</li>
-					<li>Webpack</li>
+					<li>JavaScript</li>
+					<li>CSS</li>
+					<li>C++</li>
+					<li>HTML5</li>
 				</ol>
 				<br></br>
 				<h5>Database Proficiencies</h5>
@@ -45,10 +44,17 @@ function Resume() {
 					<li>MySQL</li>
 					<li>Sequelize</li>
 					<li>NoSQL</li>
-					<li>SQLite</li>
-					<li>GraphQL</li>
 					<li>MongoDB</li>
 					<li>Mongoose</li>
+				</ol>
+				<br></br>
+				<h5>Other Proficiencies</h5>
+				<ol>
+					<li>Basic comprehension of Japanese language</li>
+					<li>Autodesk Maya</li>
+					<li>Adobe Premiere</li>
+					<li>Adobe Photoshop</li>
+					<li>Unity Engine</li>
 				</ol>
 			</div>
 		</section>

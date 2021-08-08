@@ -6,9 +6,7 @@ function Nav(props) {
   return (
     <header className="flex-row px-1">
       <h2>
-        <a data-testid="link" href="/">
           <span role="img" aria-label="paws"> 🐾</span> Andrea Augustin
-        </a>
       </h2>
   
 		<nav>
@@ -17,7 +15,7 @@ function Nav(props) {
 					<span onClick={() => setCurrentTab("about")}>About Me</span>
 				</li>
 				<li className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}>
-					<span onClick={() => setCurrentTab("portfolio")}>Projects</span>
+					<span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
 				</li>
 				<li className={currentTab === "contact" ? "mx-2 navActive" : "mx-2"}>
 					<span onClick={() => setCurrentTab("contact")}>Contact</span>

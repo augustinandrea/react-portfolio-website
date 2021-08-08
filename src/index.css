@@ -34,7 +34,7 @@ body {
   letter-spacing: 0.1em;
   background: var(--primary);
   color: var(--light);
-  font-family: 'Poiret One', cursive;
+  font-family: "Courier New", Courier, monospace;
 }
 
 h1,
@@ -47,10 +47,12 @@ h6 {
   font-weight: 500;
   margin: 5px 0;
   line-height: 1.25;
+  margin-bottom: 10px;
 }
 
 h1 {
   font-size: 2.25rem;
+  text-align: center;
 }
 
 h2 {
@@ -58,7 +60,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.75rem;
+  font-size: 12px;
+
 }
 
 h4 {
@@ -123,6 +126,17 @@ button[disabled] {
 
 img {
   max-width: 100%;
+}
+
+.photo{
+  max-width: 25%;
+  max-height: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: 20px;
+
 }
 
 span[role='img'] {
@@ -255,13 +269,7 @@ textarea {
 
 .card-text {
 	font-size: 0.75rem;
-	height: 8rem;
-	color: var(--quinary);
-}
-
-.card-techs {
-	font-size: 0.75rem;
-	height: 4rem;
+	height: auto;
 	color: var(--quinary);
 }
 
@@ -273,6 +281,13 @@ textarea {
 .card-link {
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-size: 0.70rem;
+  
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .img-thumbnail {
@@ -357,8 +372,16 @@ a {
 	justify-content: space-evenly;
 }
 
-
 svg{
   width: 50px;
   height: 50px;
+}
+
+/*contact*/
+#contact-form div{
+  padding-bottom: 10px;
+}
+
+#resume-list li{
+  list-style:circle;
 }
